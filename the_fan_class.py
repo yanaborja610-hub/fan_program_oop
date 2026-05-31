@@ -60,13 +60,13 @@ class Fan:
 
     # displaying the methods
     def display(self):
-        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
-        print("Fan Properties")
-        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
-        print("Status:", "ON" if self.__on else "OFF")
-        print("Speed:", self.__speed)
-        print("Mode:", self.get_mode())
-        print("Radius:", self.get_radius())
-        print("Color:", self.get_color())
-        print("Energy Used:", self.energy_used())
-        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
+        print("\033[95m" + "︶⊹︶︶୨୧︶︶⊹︶" * 3 + "\033[0m")
+        print("            Fan Properties")
+        print("\033[95m" + "︶⊹︶︶୨୧︶︶⊹︶" * 3 + "\033[0m")
+        print("Status:             ", "ON" if self.__on else "OFF")
+        print("Speed:              ", self.__speed)
+        print("Mode:               ", self.get_mode())
+        print("Radius:             ", self.get_radius())
+        print("Color:              ", self.get_color())
+        print("Energy Used:        ", self.energy_used())
+        print("\033[95m" + "︶⊹︶︶୨୧︶︶⊹︶" * 3 + "\033[0m")
