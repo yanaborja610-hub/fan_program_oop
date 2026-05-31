@@ -49,3 +49,11 @@ class Fan:
             return "Comfort Mode"
         elif self.__speed == self.fast:
             return "Power Cool"
+
+    def energy_used(self):
+        if self.__speed == self.slow:
+            return "25 watts"
+        elif self.__speed == self.medium:
+            return "50 watts"
+        elif self.__speed == self.fast:
+            return "80 watts"
