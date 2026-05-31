@@ -40,3 +40,12 @@ class Fan:
 
     def turn_off(self):
         self.__on = False
+
+    # Added features
+    def get_mode(self):
+        if self.__speed == self.slow:
+            return "Gentle Breeze"
+        elif self.__speed == self.medium:
+            return "Comfort Mode"
+        elif self.__speed == self.fast:
+            return "Power Cool"
