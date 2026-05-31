@@ -41,7 +41,7 @@ class Fan:
     def turn_off(self):
         self.__on = False
 
-    # Added features
+    # added features
     def get_mode(self):
         if self.__speed == self.slow:
             return "Gentle Breeze"
@@ -57,3 +57,16 @@ class Fan:
             return "50 watts"
         elif self.__speed == self.fast:
             return "80 watts"
+
+    # displaying the methods
+    def display(self):
+        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
+        print("Fan Properties")
+        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
+        print("Status:", "ON" if self.__on else "OFF")
+        print("Speed:", self.__speed)
+        print("Mode:", self.get_mode())
+        print("Radius:", self.get_radius())
+        print("Color:", self.get_color())
+        print("Energy Used:", self.energy_used())
+        print("︶⊹︶︶୨୧︶︶⊹︶" * 10)
